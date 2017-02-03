@@ -5,7 +5,7 @@ expect = chai.expect
 
 helper = new Helper('../scripts/greeting.coffee')
 
-describe 'in general channel', ->
+describe 'Greeting: In the #general channel', ->
   beforeEach ->
     @generalChannel = helper.createRoom({ name: 'C40JWUC2H' })
 
@@ -22,7 +22,7 @@ First think you probably want to do is introduce yourself over at #icepick (It's
 Remember to be civil :) Get in touch with @karthik or @raghu if you need anything, or drop a mail to info@hasgeek.com''']
       ]
 
-describe 'in other channels', ->
+describe 'Greeting: In other channels', ->
   beforeEach ->
     @otherChannel = helper.createRoom()
 

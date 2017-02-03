@@ -10,5 +10,5 @@ module.exports = (robot) ->
         #user = robot.adapter.client.rtm.dataStore.getUserById res.message.user.id
         robot.messageRoom res.message.user.id, '''Hello :wave:!
 Welcome to Friends of HasGeek. This is where the HasGeek community hangs out.
-First think you probably want to do is introduce yourself over at #icepick (It's also a good place to see what kinds of people are on here).
+First thing you probably want to do is introduce yourself over at #icepick (It's also a good place to see what kinds of people are on here).
 Remember to be civil :) Get in touch with @karthik or @raghu if you need anything, or drop a mail to info@hasgeek.com'''
