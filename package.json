@@ -27,5 +27,8 @@
     "coffee-script": "^1.12.3",
     "hubot-test-helper": "^1.5.1",
     "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha --compilers \"coffee:coffee-script/register\" test/*.coffee"
   }
 }
