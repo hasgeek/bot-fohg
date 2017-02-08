@@ -2,17 +2,4 @@ language: node_js
 node_js:
   - "node"
 
-env:
-  - secure: "kMy7oRBDRjWK7uODEdyL3kouLtBA5aT0dpD8cEd6lq8EjrcoAuahIrZNafBEUWCSYHCucJTaxUXhvxCHTPH5XzUO36D64+aXUNeo9cDYFXciaDPaS2jknPPnB8wwjTHkqwgl0mBG9C4P1Q2KTH2s++Vnq0tb022eFNTVLGAxQZLldNSpnqHhRTqfD8WZkdCIyZUSNqYgUgAY9p13+NBIfOwfbbRyGV/H98uqmFqpVORImdO497KXAaxkHRJrtJwPOa5R1JFlVD84LGOfg7rsZWh4wIH/hjXSBYbd0vW0hbYhkHwv1AEC30IYUv7JP2mFZWXXL9MG9ZKfKqHd08GqHUAL+zs+sMYMgPBGQ2+/Ig218bmEH/uraI+2R1+LlZ8SGmWBa5GS3D1dvoDin55P84qH/aHwB920ORdB7B5cjuQJE7WpDyBBN1VN14L9P/z3VPVQn35QTQBl/3PmSBSbu8Msp7gfzBUdE1b4uadm5WeEknyDovy5wD0hlsz9F9/ae6Mn4CliWy0pfcyfM5MJJnyhWuEHCBgfS9YXl1cONPgXTv6QfaTi1YQSDQ4IlyWWuNLW6PctWv2uTdpY5iylhzMcE/JtsRqOJK9BwA5KVSYUV6YGS+vcP7539HhcBnTthcMDVZ7AxcAJbINnxr0/VAg/ZS2e13DiskGScXb5ue0="
-
 script: npm run test
-
-after_success:
-  - |
-      if [ "$TRAVIS_BRANCH" = "master" ]; then
-        git pull
-        git remote add flynn https://user:$FLYNN_KEY@git.2mp4.flynnhub.com/hasgeek-slackbot.git
-        git push flynn master
-      else
-        echo "skipping branch $TRAVIS_BRANCH"
-      fi
