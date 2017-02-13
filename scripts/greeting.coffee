@@ -14,5 +14,5 @@ First thing you probably want to do is introduce yourself over at #icepick (It's
 
 Also be sure to update your profile at https://friendsofhasgeek.slack.com/account/profile. A short bio mentioning where you work/what you do/etc would be super.
 
-Remember to be civil :) Get in touch with @karthik or @raghu if you need anything, or drop a mail to info@hasgeek.com'''
+Remember to be civil :) Get in touch with @karthik or @raghu if you need anything, or drop a mail to info@hasgeek.com.'''
         robot.logger.info "#{res.message.user.id} has joined #{res.message.room}"
